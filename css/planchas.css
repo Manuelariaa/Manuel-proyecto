@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.contenedor1 {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;   
+   
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* Header */
+
+header{    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/imagenes_fondo/tropical-green-leaves-background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+
+nav {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: center;
+    transform: scale(1.20); 
+}
+
+div.line {
+    width: 4px;
+    height: 100px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 10px;
+}
+
+.domus {
+    display: grid;
+    place-items: center;
+    height: 110px;
+    width: 110px;
+}
+
+.img-domus {
+    width: 100%;
+    height: 100%;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header .btn__atras {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    background-color: #1FDE82;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contenido-header h1{
+    color: white;   
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contenido-header p{
+    color: white;   
+    
+}
+.contenido-header span{
+    color:rgb(153, 10, 197);
+    
+}
+
+
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #c0c1c4;
+}
+
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+.titulo {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.conten-cards{  
+    display: grid;  
+    place-items: center;
+   margin-top: 200px;
+    
+}
+ .card {   
+    width: 800px;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #6b6b6b;
+    border-radius: 10px;  
+    transform: 0.1s;  
+    margin-bottom: 150px;
+}   
+
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px #555454;
+}
+
+.card .img-card img{
+    
+    width: 140%;
+    height: 120%;
+    background-size: cover;
+}
+
+.card .content {
+    margin-left: 100px;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.card .content .title h3 {
+    color: #1d273b;
+}
+
+
+.card .content .title span {
+    color: #4b68a3;
+    font-size: 12px;
+}
+
+.card .content .text p {
+    color: #5D6678;
+}
+
+.card .content .btn-container button {
+    background: #1FDE82;
+    padding: 5px 10px;
+    color: #e2e2e2;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background: #000000;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter h4 {
+    color: #eeeef0;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.partFooter a:hover {
+    color: #1FDE82;
+}
+
+.partFooter img {
+    width: 50%;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color: #fff;
+    background-color: #1FDE82;
+    border-color: #1FDE82;
+}
+
+
+
+/* seccion copyright*/
+
+.footer_copyright {
+    background-color: #efeded;
+    padding: 20px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .footer_copyright p {
+    color: #464545;
+    margin: 0;
+    text-align: center;
+  }
+  
+
+/*  responsive */
+
+@media screen and (max-width:800px) {
+    .titulo {
+        font-size: 45px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+
+   
+    /* articulos */
+
+
+
+    /* Footer */
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .partFooter {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+
+

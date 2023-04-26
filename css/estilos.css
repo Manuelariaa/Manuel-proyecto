@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+
+.contenedor1 {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;   
+}
+
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* Header */
+
+header{    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/imagenes_fondo/tropical-green-leaves-background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+
+nav {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* Logo */
+.nav .logo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: center;
+    transform: scale(1.20);
+}
+
+.domus {
+    display: grid;
+    place-items: center;
+    height: 110px;
+    width: 110px;
+}
+
+.img-domus {
+    width: 100%;
+    height: 100%;
+}
+
+
+div.line {
+    width: 4px;
+    height: 100px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 10px;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header a {
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contenido-header h1{
+    color: white;   
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contenido-header p{
+    color: white;   
+    
+}
+.contenido-header span{
+    color:rgb(153, 10, 197);
+    
+}
+
+
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #c0c1c4;
+}
+
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+.titulo {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Articulos  */
+
+.about-us {
+    background: #f2f2f2;
+}
+
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.img-productos{
+    width:200px;
+    height: 200px; 
+   
+}
+.articulo>h3 {
+    font-size: 24px;
+    margin-top: 30px;
+   
+}
+
+.articulo>p {
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articulo>a {
+    color: #5D6678;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.articulo>a:hover {
+    color: #1FDE82;
+    transition: color .5s;
+}
+
+/* Questions */
+
+
+.pagos {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.pagos>img {
+    width: 200px;
+}
+
+.textos-pagos {
+    margin: 0 0 0 30px;
+}
+
+.textos-pagos p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+
+.textos-pagos a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;       
+}
+
+.services>img {  
+    width: 500px;
+    height: 500px;
+}
+
+.box-skills {
+   
+    margin: 0px 0px 0px 50px;
+    
+}
+
+.box-skills h4 {
+    font-size: 15px;   
+    padding: 0px 0 4px 15px;
+    margin-bottom: 20px;
+    color: #747474;
+}
+
+.box-skills h2 {
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #695022;
+}
+
+
+/*Video Section*/
+
+.video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 200px;
+    overflow: hidden;
+    height:700px;
+    background-image: linear-gradient(to bottom, #ffffff, #babdc2, #758185, #374949, #01180e);
+    border-radius: 60px;
+}
+
+video{
+    height: 600px;
+    border-radius: 20px;
+}
+
+.iframe {
+    height: 85%;
+    max-height: 600px;
+    width: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*Aliados*/
+
+.aliados {  
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+ }
+
+ .img_aliados{
+    width: 280px;
+    height: 220px;
+    margin: 0 1rem;
+    margin-bottom: 30px;
+    object-fit: cover;
+ }
+
+ .aliados h2{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: auto;
+    overflow: hidden;
+    height: 200px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    color: #5D6678;
+ }
+
+ .empresas {
+    display: grid;
+    place-items: center;
+ }
+
+ /*contenedor instagram*/
+
+ .contenedor-instagram{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/imagenes_fondo/tropical-green-leaves-background.jpg);
+    background-size: cover;
+   
+    height: 350px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .contenedor-instagram h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+
+ }
+
+.instagram a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.instagram{
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #fc0000;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(222, 31, 31, 0.46);
+}
+
+/* footer */
+
+footer {
+    background: #000000;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter h4 {
+    color: #eeeef0;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.partFooter a:hover {
+    color: #1FDE82;
+}
+
+.partFooter img {
+    width: 50%;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color: #fff;
+    background-color: #1FDE82;
+    border-color: #1FDE82;
+}
+
+
+
+/* seccion copyright*/
+
+.footer_copyright {
+    background-color: #efeded;
+    padding: 20px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .footer_copyright p {
+    color: #464545;
+    margin: 0;
+    text-align: center;
+  }
+  
+
+/*  responsive */
+
+@media screen and (max-width: 1116px) {
+    .video {
+        height: 2100px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .titulo {
+        font-size: 45px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: center;
+        height: 900px;
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    /* articulos */
+
+    .articulo {
+        width: 45%;
+    }
+
+    /* pagos */
+
+    .pagos {
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 97%;
+    }
+
+    .pagos >img {
+        width: 150px;
+    }
+
+    /* results */
+
+    .conten-results {
+        flex-direction: column-reverse;
+    }
+
+    .results-text>a {
+        margin-bottom: 60px;
+    }
+
+    .numbers {
+        width: 100%;
+        /* justify-content: space-between; */
+    }
+
+    .results-text {
+        width: 100%;
+    }
+
+    /* Services */
+
+    .services {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-skills {
+        margin: 0 0 40px 0;
+
+    }
+
+    .box-skills h4 {
+        width: 500px;
+    }
+
+    .services>img {
+        width: 400px;
+    }
+
+    .aliados {
+        flex-direction: column;
+    }
+
+    /* Footer */
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .partFooter {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .titulo {
+        font-size: 35px;        
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .contenido-header {
+        height: 900px;
+        justify-content: center;
+    }
+
+    .nav {
+        padding: 0 3px;
+    }
+
+    .logo {
+     
+        padding: 8px;
+
+    }
+    .contenido-header>img {
+        width: 200px;
+    }
+
+    /* Articulos */
+
+    .articulo {
+        width: 95%;   
+    }
+
+    .img-productos {
+        margin: auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+    }
+
+    /* Pagos */
+
+    .pagos {
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 97%;
+        margin: auto;
+        
+    }
+
+    .pagos >img {
+        width: 150px;      
+    }
+
+
+    /* Services */
+
+    .services{
+        display: grid;
+        justify-content: center;
+        
+    }
+
+
+    .services> img {
+        width: 300px;       
+        height: 300px;
+        margin: auto;
+        border-radius: 200px;
+    }
+
+
+    .box-skills h2 {
+       margin-top: 25px;
+       font-size: 30px;
+       font-weight: 600;
+       text-align: center;
+    }
+
+    
+    .box-skills h4 {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    /* Video Section */
+
+    .video{    
+        margin-top: -1px;
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    video{
+        height: 500px;
+    }
+
+    .iframe {
+        width: 275px;
+        height: 500px;
+    }
+
+    .iframe iframe {
+        width: 275px;
+    }
+
+
+    /* Aliados */
+
+
+    .aliados{
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*contenedor instagram*/
+
+    .contenedor-instagram {
+        height: 270px;
+    
+    }
+
+    .contenedor-instagram h2{
+       font-size: 30px;
+       font-weight: 400;
+    
+    }
+    .contenedor-instagram a{
+       position: relative;
+       
+        font-size: 18px;
+        width: 20%;
+
+    }
+
+    /* Footer */
+
+    .partFooter {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .nav .logo {
+        gap: .3rem;
+    }
+
+    .nav .logo img {
+        height: 100px;
+        width: 100px;
+        transform: none;
+    }
+
+    div.line {
+        width: 1px;
+    }
+
+    .textos-header h1 {
+        font-size: 30px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .empresas .img_aliados {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+
+
+
+
+
+
